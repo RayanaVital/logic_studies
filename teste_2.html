@@ -1,6 +1,53 @@
 <meta charset="UTF-8">
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    mostra("<h1>Bem-vindos</h1>");
+    mostra("<p>Este é um simples programa</p>");
+
+</script>
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function exibeTitulo(titulo) {
+        document.write("<h1>" + titulo + "</h1>");
+        pulaLinha();
+    }
+
+    function exibeParagrafo(paragrafo) {
+        document.write("<p>" + paragrafo + "</p>");
+        pulaLinha();
+    }
+
+    // pede para alguém ler daqui em diante e veja se ele entende o que esta sendo feito
+    exibeTitulo("Bem-vindos");
+    exibeParagrafo("Este é um simples programa");
+</script>
 <script>    
+    function fazPegadinha() {
+        alert("Olá");
+        alert("amiga!");
+        alert("Tá");
+        alert("bastante");
+        alert("entediada?");
+        alert("Em ficar");
+        alert("Clicando em");
+        alert("Ok");
+        alert("né?");
+    }
     var n = 2;
+
+    fazPegadinha();
     document.write("O resultado da fórmula é : " + n * (10 / 20)  );
     document.write ("<br>");
     var idadeLinda = 12;
@@ -18,4 +65,39 @@
 
     document.write("A média das idades é <br>");
     document.write( (IDADE1 + IDADE2 + IDADE3) / 3);
+
+    
+</script>
+
+<script>
+
+function pulaLinha() {
+    // pulando duas linhas
+    document.write("<br><hr><br>");
+}
+
+function mostra(frase) {
+    document.write(frase);
+    pulaLinha();
+}
+</script>
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function calculaImc(altura, peso) {
+
+        return peso / (altura * altura);
+        
+    }
+
+    var imcCalculado = calculaImc(1.77, 75);
+    mostra("O meu IMC é : " + imcCalculado);
 </script>
