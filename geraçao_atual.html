@@ -1,0 +1,24 @@
+<meta charset="UTF-8">
+<script>
+
+function pulaLinha() {
+    document.write ("<br><hr><br>");
+}
+
+function mostra (texto) {
+    document.write ("<big>" + texto + "<big>");
+    pulaLinha();
+    document.write (geraçao);
+    pulaLinha();
+    document.write (" geração!!")
+}
+
+var primeiroAno = 1500;
+var anoAtual = 2022;
+var mediaReprodutiva = 28;
+
+var geraçao = ((anoAtual - primeiroAno)/mediaReprodutiva);
+
+mostra ("Estamos na: ");
+ 
+</script>
